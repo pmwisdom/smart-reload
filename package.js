@@ -13,8 +13,8 @@ Package.describe({
 Package.onUse(function(api) {
     api.versionsFrom('1.1.0.2');
 
-    api.use(['reactive-var', 'reload', 'underscore']);
-    api.imply(['reactive-var', 'reload', 'underscore']);
+    api.use(['reactive-var', 'reload', 'tracker', '3stack:idle-watcher', 'underscore']);
+    api.imply(['reactive-var', 'reload', 'tracker', '3stack:idle-watcher', 'underscore']);
 
     api.addFiles('lib/smart-reload.js', 'client');
 
