@@ -42,24 +42,24 @@ SmartReload.configure({
 ##Reload Options --
 
 ###First Start (firstStart) --
-	If you enable this option, no matter what other settings you enable, your app will get forcefully updated to the newest version the first time it is started by the client. This is especially important for mobile-apps. 
+If you enable this option, no matter what other settings you enable, your app will get forcefully updated to the newest version the first time it is started by the client. This is especially important for mobile-apps. 
 
 ###Router (router) ---
-	if you enable router blacklisting, you can add routes to SmartReload.routes that you do not want to update. Ex:
+if you enable router blacklisting, you can add routes to SmartReload.routes that you do not want to update. Ex:
     ````javascript
     SmartReload.routes = {
     	pathToRoute : true
     };
     `````
-    Means that if the client is on the route 'pathToRoute' if there is an update while on that route, it will wait till the user navs to a page that isnt blacklisted to update the application.
+Means that if the client is on the route 'pathToRoute' if there is an update while on that route, it will wait till the user navs to a page that isnt blacklisted to update the application.
     
 ###Selector (selector) ---
-	The same as router, except for selectors. Ex. If you add the selector '.item' to SmartReload.selectors any page with an '.item' will not reload until you nav onto a page without an '.item' class in the dom.
+The same as router, except for selectors. Ex. If you add the selector '.item' to SmartReload.selectors any page with an '.item' will not reload until you nav onto a page without an '.item' class in the dom.
     
 ###Idle (idle) ---
-	If enabled, this will disallow the client app from refreshing until a client becomes inactive (x number of seconds pass while a user hasnt interacted with the app/ webpage). This allows you to sneakily update while clients are inactive / away. Thanks to the IdleWatcher package on atmosphere. 
+If enabled, this will disallow the client app from refreshing until a client becomes inactive (x number of seconds pass while a user hasnt interacted with the app/ webpage). This allows you to sneakily update while clients are inactive / away. Thanks to the IdleWatcher package on atmosphere. 
     
-    MOBILE EXTRA: If you enable the idle option, you can also enable a splash screen to display while the app is hot code pushing / updating. Highly recommend you enable this if your working with a cordova / mobile app as it seamlessly transitions without the flashing UI you get normally when you hot code. CORDOVA ONLY.
+MOBILE EXTRA: If you enable the idle option, you can also enable a splash screen to display while the app is hot code pushing / updating. Highly recommend you enable this if your working with a cordova / mobile app as it seamlessly transitions without the flashing UI you get normally when you hot code. CORDOVA ONLY.
 
 
 Demo coming soon....
