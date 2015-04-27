@@ -1,6 +1,6 @@
 Package.describe({
   name: 'mirrorcell:smart-reload',
-  version: '0.5.2',
+  version: '0.5.7',
   // Brief, one-line summary of the package.
   summary: 'Provides Options To Customize How Your App Automatically Updates Clients',
   // URL to the Git repository containing the source code for this package.
@@ -17,8 +17,8 @@ Cordova.depends({
 Package.onUse(function(api) {
     api.versionsFrom('1.1.0.2');
 
-    api.use(['reactive-var', 'reload', 'tracker', '3stack:idle-watcher@0.1.1', 'underscore']);
-    api.imply(['reactive-var', 'reload', 'tracker', '3stack:idle-watcher@0.1.1', 'underscore']);
+    api.use(['reactive-var', 'reload', 'templating', 'tracker', '3stack:idle-watcher@0.1.1', 'underscore']);
+    api.imply(['reactive-var', 'reload', 'templating', 'tracker', '3stack:idle-watcher@0.1.1', 'underscore']);
 
     api.addFiles('lib/smart-reload.js', 'client');
 
