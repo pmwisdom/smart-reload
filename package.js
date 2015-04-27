@@ -1,6 +1,6 @@
 Package.describe({
   name: 'mirrorcell:smart-reload',
-  version: '0.5.0',
+  version: '0.5.2',
   // Brief, one-line summary of the package.
   summary: 'Provides Options To Customize How Your App Automatically Updates Clients',
   // URL to the Git repository containing the source code for this package.
