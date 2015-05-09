@@ -2,7 +2,7 @@
 
 ##### REQUIREMENTS: IRON:ROUTER #####
 
-TODO: Demo
+####Demo : https://github.com/pmwisdom/smart-reload-demo ####
 
 What does Smart Reload Do For You?
 
@@ -67,8 +67,14 @@ The same as router, except for selectors. Ex. If you add the selector '.item' to
 Ex:
 ````
 SmartReload.selectors = {
-   form : 'form',
-   custom : '.custom-class'
+   form : : {
+        selector: 'form',
+        enabled: true
+   },
+   custom: {
+        selector: '.custom-class',
+        enabled: true
+   }
 };
 `````
     
