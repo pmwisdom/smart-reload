@@ -2,7 +2,7 @@
 
 ##### REQUIREMENTS: IRON:ROUTER #####
 
-####Demo Code / App: https://github.com/pmwisdom/smart-reload-demo ####
+#### Demo Code / App: https://github.com/pmwisdom/smart-reload-demo ####
 
 What does Smart Reload Do For You?
 
